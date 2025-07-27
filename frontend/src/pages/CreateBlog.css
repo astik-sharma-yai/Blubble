@@ -1,0 +1,269 @@
+.create-blog {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.create-blog-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.create-blog-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.create-blog-header p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.blog-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.form-group textarea {
+  min-height: 300px;
+  resize: vertical;
+  font-family: 'Courier New', monospace;
+  line-height: 1.6;
+}
+
+.content-editor {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.editor-toolbar {
+  background: #f8f9fa;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: white;
+  border: 1px solid #ddd;
+  color: #495057;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toolbar-btn:hover {
+  background: #e9ecef;
+}
+
+.toolbar-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.content-preview {
+  padding: 1rem;
+  background: white;
+  min-height: 300px;
+}
+
+.content-preview h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.markdown-preview {
+  line-height: 1.6;
+  color: #555;
+}
+
+.tags-input {
+  margin-top: 0.5rem;
+}
+
+.tag-input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+.tag-input-container input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+.tag-input-container input:focus {
+  outline: none;
+}
+
+.add-tag-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-tag-btn:hover {
+  background: #0056b3;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tags-list .tag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e9ecef;
+  color: #495057;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.remove-tag:hover {
+  color: #c82333;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 0.5rem;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.form-actions .btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.markdown-help {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-help h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.markdown-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.example {
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.example strong {
+  color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+  .create-blog-header h1 {
+    font-size: 2rem;
+  }
+  
+  .blog-form {
+    padding: 1rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .markdown-examples {
+    grid-template-columns: 1fr;
+  }
+} 

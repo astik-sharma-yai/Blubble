@@ -1,0 +1,170 @@
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recent-blogs {
+  margin-top: 3rem;
+}
+
+.recent-blogs h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e1e8ed;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.blog-header h3 {
+  margin-bottom: 0.5rem;
+}
+
+.blog-header h3 a {
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.blog-header h3 a:hover {
+  color: #3498db;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 1rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.blog-excerpt {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.blog-tags {
+  margin-bottom: 1rem;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.blog-date {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.read-more {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.no-blogs {
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-blogs p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.view-all {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .blog-card {
+    padding: 1rem;
+  }
+} 
